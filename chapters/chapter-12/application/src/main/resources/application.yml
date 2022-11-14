@@ -1,0 +1,19 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: eu-central-1
+    instance:
+      data:
+        enabled: false
+    sns:
+      enabled: false
+
+server:
+  forward-headers-strategy: framework
+
+custom:
+  invitation-codes: DUKE, HELLO_WORLD, STRATOSPHERIC
+  sharing-queue: stratospheric-todo-sharing
+  auto-confirm-collaborations: false

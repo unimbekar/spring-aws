@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: demo-application
+  config:
+    import: 'aws-parameterstore:'
+
+cloud:
+  aws:
+    # credentials:
+    #   profile-name: default
+    region:
+      static: us-east-1
+      auto: false
+    stack:
+      auto: false # Automatic stack detection
+    sns:
+      enabled: true
+    sqs:
+      enabled: true
+# custom:
+#   bucket-name: upen-stratosperic
+#   sqs-queue-name: stratospheric-demo-queue
